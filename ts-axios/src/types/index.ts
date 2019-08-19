@@ -6,7 +6,7 @@ export interface AxiosRequestConfig {
 }
 
 export type Method = 'get' | 'GET'
-  | 'delete' | 'Delete'
+  | 'delete' | 'DELETE'
   | 'head' | 'HEAD'
   | 'options' | 'OPTIONS'
   | 'post' | 'POST'
