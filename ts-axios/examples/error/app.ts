@@ -1,4 +1,4 @@
-import axios, { AxiosError } from '../../src/index'
+import axios from '../../src/index'
 
 axios({
   method: 'get',
@@ -6,7 +6,7 @@ axios({
 }).then((res) => {
   console.log(res)
 }).catch((e) => {
-  console.log(e)
+  console.log('shenxf11111111111111111',e)
 })
 
 axios({
@@ -15,7 +15,7 @@ axios({
 }).then((res) => {
   console.log(res)
 }).catch((e) => {
-  console.log(e)
+  console.log('shenxf122222222222222222222', e)
 })
 
 setTimeout(() => {
@@ -35,10 +35,10 @@ axios({
   timeout: 2000
 }).then((res) => {
   console.log(res)
-}).catch((e: AxiosError) => {
-  console.log(e.message)
-  console.log(e.config)
-  console.log(e.code)
-  console.log(e.request)
-  console.log(e.isAxiosError)
+}).catch((e) => {
+  console.log('shenxf3333333333333333',e.message)
+  // console.log(e.config)
+  // console.log(e.code)
+  // console.log(e.request)
+  // console.log(e.isAxiosError)
 })
