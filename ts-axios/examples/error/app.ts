@@ -37,8 +37,8 @@ axios({
   console.log(res)
 }).catch((e) => {
   console.log('shenxf3333333333333333',e.message)
-  // console.log(e.config)
-  // console.log(e.code)
-  // console.log(e.request)
-  // console.log(e.isAxiosError)
+  console.log(e.config)
+  console.log(e.code)
+  console.log(e.request)
+  console.log(e.isAxiosError)
 })
