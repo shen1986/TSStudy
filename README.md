@@ -15,3 +15,8 @@
 - [泛型](/docs/chapter2/generic.md)
 - [类型推断](/docs/chapter2/inference.md)
 - [高级类型](/docs/chapter2/advance.md)
+
+## ts-axios项目初始化
+- [需求分析](/docs/chapter3/require.md)
+- [初始化项目](/docs/chapter3/init.md)
+- [编写基础请求代码](/docs/chapter3/base.md)
