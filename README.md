@@ -21,3 +21,11 @@
 - [需求分析](/docs/chapter3/require.md)
 - [初始化项目](/docs/chapter3/init.md)
 - [编写基础请求代码](/docs/chapter3/base.md)
+
+## ts-axios基础功能实现
+- [处理请求url参数](/docs/chapter4/url.md)
+- [处理请求body数据](/docs/chapter4/data.md)
+- [处理请求header](/docs/chapter4/header.md)
+- [获取响应数据](/docs/chapter4/response.md)
+- [处理响应header](/docs/chapter4/response-header.md)
+- [处理响应data](/docs/chapter4/response-data.md)
