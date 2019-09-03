@@ -5,3 +5,13 @@
 - [Introduction](/docs/chapter1/README.md)
 - [安装TypeScript](/docs/chapter1/install.md)
 - [编写第一个TypeScript程序](/docs/chapter1/start.md)
+
+## TypeScript常用语法
+- [基础类型](/docs/chapter2/type.md)
+- [变量声明](/docs/chapter2/declare.md)
+- [接口](/docs/chapter2/interface.md)
+- [类](/docs/chapter2/class.md)
+- [函数](/docs/chapter2/function.md)
+- [泛型](/docs/chapter2/generic.md)
+- [类型推断](/docs/chapter2/inference.md)
+- [高级类型](/docs/chapter2/advance.md)
