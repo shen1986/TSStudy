@@ -12,6 +12,11 @@ export interface AxiosPromise<T = any> extends Promise<AxiosResponse<T>> {
 }
 
 export interface Axios {
+  interceptors: {
+    request: AxiosInterceptorManager<AxiosRequestConfig>
+    response: AxiosInterceptorManager<AxiosResponse>
+  }
+
   request<T = any>(config: AxiosRequestConfig): AxiosPromise<T>
 
   get<T = any>(url: string, config?: AxiosRequestConfig): AxiosPromise<T>
@@ -53,23 +58,24 @@ export type Method = 'get' | 'GET'
   | 'put' | 'PUT'
   | 'patch' | 'PATCH'
 
-// export interface AxiosResponse {
-//   data: any
-//   status: number
-//   statusText: string
-//   headers: any
-//   config: AxiosRequestConfig
-//   request: any
-// }
-
-// export interface AxiosPromise extends Promise<AxiosResponse> {
-
-// }
-
 export interface AxiosError extends Error {
   config: AxiosRequestConfig
   code?: string
   request?: any
   response?: AxiosResponse
   isAxiosError: boolean
+}
+
+export interface AxiosInterceptorManager<T> {
+  use(resolved: ResolvedFn<T>, rejected?: RejectedFn): number
+
+  eject(id: number): void
+}
+
+export interface ResolvedFn<T = any> {
+  (val: T): T | Promise<T>
+}
+
+export interface RejectedFn {
+  (error: any): any
 }
