@@ -29,3 +29,15 @@
 - [获取响应数据](/docs/chapter4/response.md)
 - [处理响应header](/docs/chapter4/response-header.md)
 - [处理响应data](/docs/chapter4/response-data.md)
+
+## ts-axios 异常情况处理
+- [错误处理](/docs/chapter5/error.md)
+- [错误信息增强](/docs/chapter5/enhance.md)
+
+## ts-axios 接口扩展
+- [扩展接口](/docs/chapter6/extend.md)
+- [函数重载](/docs/chapter6/overload.md)
+- [响应数据支持泛型](/docs/chapter6/generic.md)
+
+## ts-axios 拦截器实现
+- [拦截器设计与实现](/docs/chapter7/interceptor.md)
