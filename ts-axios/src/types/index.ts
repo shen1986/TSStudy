@@ -12,6 +12,7 @@ export interface AxiosPromise<T = any> extends Promise<AxiosResponse<T>> {
 }
 
 export interface Axios {
+  defaults: AxiosRequestConfig
   interceptors: {
     request: AxiosInterceptorManager<AxiosRequestConfig>
     response: AxiosInterceptorManager<AxiosResponse>
@@ -41,13 +42,14 @@ export interface AxiosInstance extends Axios {
 }
 
 export interface AxiosRequestConfig {
-  url: string
+  url?: string
   method?: Method
   data?: any
   params?: any
   headers?: any
-  responseType?: XMLHttpRequestResponseType,
+  responseType?: XMLHttpRequestResponseType
   timeout?: number
+  [propName: string]: any
 }
 
 export type Method = 'get' | 'GET'
