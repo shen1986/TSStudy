@@ -41,3 +41,37 @@
 
 ## ts-axios 拦截器实现
 - [拦截器设计与实现](/docs/chapter7/interceptor.md)
+
+## ts-axios 配置化实现
+- [合并配置的设计与实现](/docs/chapter8/merge.md)
+- [请求和响应配置化](/docs/chapter8/transform.md)
+- [扩展axios.create静态接口](/docs/chapter8/create.md)
+
+## ts-axios 取消功能实现
+- [取消功能的设计与实现](/docs/chapter9/cancel.md)
+
+## ts-axios 更多功能实现
+- [withCredentials](/docs/chapter10/withCredentials.md)
+- [XSRF防御](/docs/chapter10/xsrf.md)
+- [上传和下载的进度监控](/docs/chapter10/upload-download.md)
+- [HTTP授权](/docs/chapter10/auth.md)
+- [自定义合法状态码](/docs/chapter10/validateStatus.md)
+- [自定义参数序列化](/docs/chapter10/paramsSerializer.md)
+- [baseURL](/docs/chapter10/baseURL.md)
+- [静态方法扩展](/docs/chapter10/static.md)
+
+## ts-axios 单元测试
+- [前言](/docs/chapter11/preface.md)
+- [Jest 安装和配置](/docs/chapter11/jest.md)
+- [辅助模块单元测试](/docs/chapter11/helpers.md)
+- [请求模块单元测试](/docs/chapter11/requests.md)
+- [headers 模块单元测试](/docs/chapter11/headers.md)
+- [Axios 实例模块单元测试](/docs/chapter11/instance.md)
+- [拦截器模块单元测试](/docs/chapter11/interceptor.md)
+- [mergeConfig 模块单元测试](/docs/chapter11/mergeConfig.md)
+- [请求取消模块单元测试](/docs/chapter11/cancel.md)
+- [剩余模块单元测试](/docs/chapter11/more.md)
+
+## ts-axios 部署与发布
+- [ts-axios 编译与发布](/docs/chapter12/build-deploy.md)
+- [引用 ts-axios 库](/docs/chapter12/demo.md)
