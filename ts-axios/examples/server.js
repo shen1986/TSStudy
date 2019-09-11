@@ -40,6 +40,8 @@ registerConfigRouter()
 
 registerCancelRouter();
 
+registerMoreRouter();
+
 app.use(router)
 
 const port = process.env.PORT || 8080
@@ -154,8 +156,6 @@ function registerConfigRouter() {
   })
 }
 
-
-
 function registerCancelRouter() {
   router.get('/cancel/get', function(req, res) {
     setTimeout(() => {
@@ -169,3 +169,10 @@ function registerCancelRouter() {
   })
 }
 
+function registerMoreRouter() {
+  router.get('/more/get', function (req, res) {
+    setTimeout(() => {
+      res.end('hello')
+    }, 1000)
+  })
+}
