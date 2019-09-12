@@ -20,6 +20,12 @@ app.use(webpackHotMiddleware(compiler))
 
 app.use(express.static(__dirname))
 
+app.use(express.static(__dirname, {
+  setHeaders(res) {
+    res.cookie('XSRF-TOKEN-D', '1234abc')
+  }
+}))
+
 app.use(bodyParser.json())
 // app.use(bodyParser.text())
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -171,6 +177,7 @@ function registerCancelRouter() {
 
 function registerMoreRouter() {
   router.get('/more/get', function (req, res) {
+      console.log(1);
     setTimeout(() => {
       res.end('hello')
     }, 1000)
