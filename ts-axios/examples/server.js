@@ -4,6 +4,7 @@ const webpack = require('webpack')
 const webpackDevMiddleware = require('webpack-dev-middleware')
 const webpackHotMiddleware = require('webpack-hot-middleware')
 const WebpackConfig = require('./webpack.config')
+const path = require('path')
 
 const app = express()
 const compiler = webpack(WebpackConfig)
@@ -181,5 +182,15 @@ function registerMoreRouter() {
     setTimeout(() => {
       res.end('hello')
     }, 1000)
+  })
+
+  const multipart = require('connect-multiparty')
+  app.use(multipart({
+    uploadDir: path.resolve(__dirname, 'upload-file')
+  }))
+
+  router.post('/more/upload', function (req, res) {
+    console.log(req.body, req.files)
+    res.end('upload success!')
   })
 }
