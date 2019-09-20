@@ -179,10 +179,7 @@ function registerCancelRouter() {
 
 function registerMoreRouter() {
   router.get('/more/get', function (req, res) {
-      console.log(1);
-    setTimeout(() => {
-      res.end('hello')
-    }, 1000)
+     res.json(req.body)
   })
 
   const multipart = require('connect-multiparty')
