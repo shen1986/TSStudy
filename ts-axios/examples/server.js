@@ -208,4 +208,14 @@ function registerMoreRouter() {
     res.status(304)
     res.end()
   })
+
+  router.get('/more/A', function(req, res) {
+    res.end('Hello A')
+  })
+
+  router.get('/more/B', function(req, res) {
+    setTimeout(() => {
+      res.end('Hello B')
+    }, 1000)
+  })
 }
