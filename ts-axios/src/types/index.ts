@@ -106,7 +106,7 @@ export interface AxiosBasicCredentials {
 }
 
 export interface AxiosTransformer {
-  (data: any, headers: any): any
+  (data: any, headers?: any): any
 }
 
 export type Method = 'get' | 'GET'
